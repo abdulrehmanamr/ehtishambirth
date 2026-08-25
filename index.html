@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09070d">
+<title>For My Gulab Flower — Ehtisham</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+:root{--bg:#08060c;--rose:#ff5da9;--rose2:#ffb1d3;--lilac:#b49aff;--cream:#fff8fb;--muted:#c4b9c7;--glass:#ffffff0b;--line:#ffffff16}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:"DM Sans",sans-serif;overflow-x:hidden}.hide{display:none!important}
+canvas{position:fixed;inset:0;z-index:-3}.bg{position:fixed;inset:-30%;z-index:-4;background:radial-gradient(circle at 22% 25%,#ff4f9d2b,transparent 27%),radial-gradient(circle at 78% 20%,#9a7bff28,transparent 28%),radial-gradient(circle at 50% 90%,#ff6a9b17,transparent 30%);filter:blur(55px);animation:floatbg 15s ease-in-out infinite alternate}@keyframes floatbg{to{transform:translate(5%,4%) rotate(6deg) scale(1.08)}}
+#intro{position:fixed;inset:0;z-index:1000;background:#08060c;display:grid;place-items:center;text-align:center;transition:.9s}.intro-hide{opacity:0;visibility:hidden}.intro-box{width:min(760px,90%)}.rose-mark{font-size:60px;animation:bloom 2.2s ease-in-out infinite}.intro-kicker,.kicker{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--rose2)}.intro-title{font:800 clamp(60px,11vw,125px)/.78 "Playfair Display";margin:22px 0;background:linear-gradient(110deg,#fff,#ff9dc9,#b49aff,#fff);background-size:300%;-webkit-background-clip:text;color:transparent;animation:shine 6s linear infinite}.intro-copy{color:var(--muted);line-height:1.8}.enter{margin-top:25px;padding:15px 25px;border-radius:999px;border:1px solid #ffffff26;background:#ffffff0b;color:#fff;font-weight:800;cursor:pointer;transition:.3s}.enter:hover{transform:translateY(-3px);box-shadow:0 15px 50px #ff5da933}@keyframes shine{to{background-position:300%}}@keyframes bloom{50%{transform:scale(1.18) rotate(-5deg)}}
+nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:50;width:min(920px,calc(100% - 28px));padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:#0d0a13c9;backdrop-filter:blur(18px);display:flex;justify-content:space-between;align-items:center}.brand{font-size:12px;font-weight:800}.brand b{color:var(--rose2)}.links{display:flex;gap:4px}.links button{border:0;background:transparent;color:#a99eaf;border-radius:999px;padding:8px 12px;cursor:pointer}.links button:hover{background:#fff0e;color:#fff}.music{border:1px solid #ffffff18;background:#fff08;color:#fff;border-radius:50%;width:34px;height:34px;cursor:pointer}
+section{min-height:100svh;padding:120px 18px;display:grid;place-items:center}.wrap{width:min(1120px,100%);margin:auto}.hero{text-align:center}.hero-title{font:800 clamp(58px,12vw,150px)/.78 "Playfair Display";letter-spacing:-5px;margin:22px 0;background:linear-gradient(110deg,#fff,#ffb3d7 35%,#b49aff 70%,#fff);background-size:300%;-webkit-background-clip:text;color:transparent;animation:shine 7s linear infinite}.hero-title small{display:block;font:600 clamp(13px,2vw,20px)/1 "DM Sans";letter-spacing:5px;color:#ffffff7d;margin-bottom:20px}.hero-copy{max-width:720px;margin:25px auto;color:var(--muted);line-height:1.9;font-size:16px}.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.primary,.secondary{padding:14px 22px;border-radius:999px;font-weight:800;cursor:pointer}.primary{border:0;color:#fff;background:linear-gradient(135deg,#ff4f9f,#a779ff);box-shadow:0 15px 50px #ff4f9f26}.secondary{border:1px solid var(--line);background:#fff08;color:#fff}.count{display:flex;justify-content:center;gap:9px;margin:28px 0;flex-wrap:wrap}.unit{width:83px;padding:14px 8px;border:1px solid var(--line);background:#fff08;border-radius:18px}.unit b{font-size:28px;display:block}.unit span{font-size:9px;color:#918797;letter-spacing:1px;text-transform:uppercase}.scroll{position:absolute;bottom:20px;color:#777080;font-size:9px;letter-spacing:3px}
+.panel{border:1px solid var(--line);background:linear-gradient(145deg,#fff0d,#fff003);border-radius:34px;padding:48px;box-shadow:0 35px 100px #0008;backdrop-filter:blur(20px)}.title{font:700 clamp(40px,6vw,76px)/.92 "Playfair Display";margin:15px 0}.muted{color:var(--muted);line-height:1.85}.reveal{opacity:0;transform:translateY(45px);transition:1s cubic-bezier(.2,.8,.2,1)}.reveal.show{opacity:1;transform:none}
+.flower{font-size:40px;filter:drop-shadow(0 10px 25px #ff5da966)}.gift{width:205px;height:170px;margin:40px auto 15px;position:relative;cursor:pointer;animation:bob 2.7s ease-in-out infinite}.base{position:absolute;bottom:0;left:10px;width:185px;height:115px;border-radius:12px 12px 25px 25px;background:linear-gradient(145deg,#ff5da9,#8c6cf6)}.lid{position:absolute;z-index:3;left:0;top:30px;width:205px;height:42px;border-radius:11px;background:linear-gradient(145deg,#ff9bc7,#9e83ff);transition:.8s}.gift.open .lid{transform:translateY(-95px) rotate(-10deg)}.rv{position:absolute;z-index:4;left:86px;bottom:0;width:32px;height:140px;background:#ffd66a99}.rh{position:absolute;z-index:4;left:10px;top:72px;width:185px;height:26px;background:#ffd66a99}.gift:before,.gift:after{content:"";position:absolute;z-index:5;top:5px;width:55px;height:32px;background:#ffd66a;border-radius:50%}.gift:before{left:54px;transform:rotate(24deg)}.gift:after{right:54px;transform:rotate(-24deg)}@keyframes bob{50%{transform:translateY(-10px)}}
+.statuses{display:grid;gap:10px;margin-top:30px}.status{padding:15px 17px;border:1px solid var(--line);border-radius:17px;background:#fff006;display:flex;justify-content:space-between;color:#cfc6d3}.status b{color:#ff9dc9}.chat{border:1px solid var(--line);border-radius:27px;overflow:hidden;background:#0e0b12;max-width:760px;margin:auto}.chathead{display:flex;gap:12px;align-items:center;padding:17px 19px;border-bottom:1px solid var(--line)}.avatar{width:43px;height:43px;border-radius:50%;object-fit:cover}.online{font-size:10px;color:#63e5ad}.bubble{max-width:78%;padding:13px 16px;margin:13px 18px;border-radius:18px;background:#211c28;font-size:14px;line-height:1.55;animation:pop .45s both}.me{margin-left:auto;background:linear-gradient(135deg,#7f56e8,#e04a9f);border-bottom-right-radius:5px}.them{border-bottom-left-radius:5px}@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:none}}
+.memory-intro{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.memory-intro .muted{max-width:480px}.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-auto-rows:280px;gap:14px}.card{position:relative;overflow:hidden;border-radius:24px;border:1px solid #fff1c;cursor:pointer;background:#17121d}.card:first-child{grid-row:span 2}.card:nth-child(4){grid-column:span 2}.card img{width:100%;height:100%;object-fit:cover;transition:.8s}.card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,#000c)}.card:hover img{transform:scale(1.08)}.caption{position:absolute;z-index:2;bottom:17px;left:17px;right:17px}.caption b{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#ffb3d7;margin-bottom:5px}.caption strong{font-size:16px}.quote{display:block;margin-top:6px;color:#ddd0da;font-size:12px}
+.lightbox{position:fixed;inset:0;background:#000e;z-index:200;display:none;place-items:center;padding:20px}.lightbox.show{display:grid}.lightbox img{max-width:94vw;max-height:86vh;border-radius:18px;box-shadow:0 30px 100px #000}.close{position:absolute;top:20px;right:20px;border:1px solid #fff2;background:#fff1;color:#fff;border-radius:50%;width:42px;height:42px;font-size:22px;cursor:pointer}
+.cake{text-align:center}.cake-art{height:250px;width:300px;margin:30px auto;position:relative}.cakebody{position:absolute;bottom:10px;left:10px;width:280px;height:115px;border-radius:18px 18px 28px 28px;background:linear-gradient(145deg,#ff5da9,#8668e8)}.icing{position:absolute;z-index:2;left:10px;bottom:95px;width:280px;height:80px;border-radius:50%;background:#ffe1ef;box-shadow:inset 0 -12px #ff9bca}.candles{position:absolute;z-index:5;left:0;right:0;bottom:153px;display:flex;justify-content:center;gap:34px}.candle{height:63px;width:18px;border-radius:6px;background:repeating-linear-gradient(45deg,#fff 0 7px,#ff6db4 7px 14px);position:relative}.flame{position:absolute;width:18px;height:25px;top:-22px;left:0;background:#ffd76a;border-radius:50% 50% 50% 0;transform:rotate(-45deg);animation:flick .35s alternate infinite}.blown .flame{display:none}@keyframes flick{to{transform:rotate(-45deg) scale(1.18)}}
+.final{text-align:center}.final h2{font:800 clamp(50px,9vw,120px)/.82 "Playfair Display";margin:20px 0;background:linear-gradient(110deg,#fff,#ff94c7,#b49aff,#fff);background-size:300%;-webkit-background-clip:text;color:transparent;animation:shine 6s linear infinite}.sig{font:600 23px "Playfair Display";color:#ffb0d3}
+.confetti{position:fixed;top:-20px;z-index:500;width:8px;height:13px;animation:fall 3.5s linear forwards;pointer-events:none}@keyframes fall{to{transform:translateY(110vh) rotate(900deg);opacity:.2}}.heart{position:fixed;bottom:-20px;z-index:500;animation:rise 4s linear forwards;pointer-events:none}@keyframes rise{to{transform:translateY(-110vh) translateX(var(--drift));opacity:0}}.toast{position:fixed;z-index:700;bottom:24px;left:50%;transform:translate(-50%,20px);opacity:0;background:#17121f;border:1px solid var(--line);padding:12px 18px;border-radius:999px;font-size:13px;transition:.3s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:760px){.links{display:none}.panel{padding:30px 20px}.memory-intro{display:block}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:230px}.card:first-child{grid-row:span 2}.card:nth-child(4){grid-column:span 2}}
+@media(max-width:480px){section{padding:105px 14px}.gallery{grid-template-columns:1fr;grid-auto-rows:310px}.card:first-child,.card:nth-child(4){grid-row:span 1;grid-column:span 1}.unit{width:70px}}
+
+/* Cinematic "my flower" reveal — flower is a metaphor, not the site theme */
+.plucked-section{min-height:100svh;position:relative;overflow:hidden}
+.plucked-stage{
+  min-height:760px;position:relative;overflow:hidden;border-radius:42px;
+  border:1px solid rgba(255,255,255,.12);
+  background:
+    radial-gradient(circle at 50% 46%,rgba(255,119,178,.12),transparent 24%),
+    radial-gradient(circle at 78% 18%,rgba(170,140,255,.10),transparent 28%),
+    linear-gradient(145deg,#100b13,#09070d 65%,#110b15);
+  box-shadow:0 45px 130px #0009;
+}
+.plucked-stage:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0 44%,rgba(255,255,255,.025) 50%,transparent 56%);animation:stageSweep 7s linear infinite}
+@keyframes stageSweep{to{transform:translateX(35%)}}
+.stage-copy{position:absolute;z-index:8;left:7%;top:9%;max-width:500px}
+.stage-copy .title{font-size:clamp(48px,7vw,88px)}
+.stage-copy .muted{font-size:15px;max-width:440px}
+.stage-copy .muted b{color:#ffb2d2}
+.flower-scene{position:absolute;inset:0;display:grid;place-items:center}
+.moon-glow{position:absolute;width:360px;height:360px;border-radius:50%;background:#ff74b51a;filter:blur(40px);animation:moonPulse 4s ease-in-out infinite}
+@keyframes moonPulse{50%{transform:scale(1.12);opacity:.65}}
+.stem{position:absolute;width:5px;height:360px;top:48%;left:50%;background:linear-gradient(#79a875,#314e38);border-radius:10px;transform-origin:top;transform:rotate(3deg)}
+.leaf{position:absolute;width:88px;height:42px;background:linear-gradient(135deg,#557a58,#233a2a);border-radius:100% 0 100% 0}
+.leaf-a{left:43%;top:63%;transform:rotate(24deg)}
+.leaf-b{left:51%;top:70%;transform:scaleX(-1) rotate(28deg)}
+.rose-bloom{position:absolute;z-index:5;top:29%;left:50%;width:142px;height:142px;border:0;background:transparent;cursor:pointer;transform:translateX(-50%);filter:drop-shadow(0 25px 35px rgba(255,75,151,.28));transition:.5s}
+.rose-bloom:hover{transform:translateX(-50%) scale(1.07)}
+.petal{position:absolute;left:50%;top:50%;width:65px;height:85px;background:linear-gradient(145deg,#ff9ac8,#d52c76 75%);border-radius:70% 25% 65% 30%;transform-origin:50% 85%;box-shadow:inset -8px -8px 15px #8b184b55}
+.p1{transform:translate(-50%,-80%) rotate(0deg)}.p2{transform:translate(-50%,-80%) rotate(60deg)}.p3{transform:translate(-50%,-80%) rotate(120deg)}.p4{transform:translate(-50%,-80%) rotate(180deg)}.p5{transform:translate(-50%,-80%) rotate(240deg)}.p6{transform:translate(-50%,-80%) rotate(300deg)}
+.center{position:absolute;left:50%;top:50%;width:40px;height:40px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffbad8,#8f174b);box-shadow:0 0 25px #ff5da977}
+.hand{position:absolute;z-index:6;left:calc(50% + 90px);top:43%;width:150px;height:120px;opacity:0;transform:translateX(40px) rotate(8deg);transition:1s ease;pointer-events:none}
+.hand:before{content:"";position:absolute;right:0;bottom:0;width:105px;height:72px;border-radius:50% 45% 35% 55%;background:linear-gradient(145deg,#d89577,#8f4e3c);box-shadow:0 8px 30px #0006}
+.hand:after{content:"";position:absolute;right:62px;top:18px;width:80px;height:22px;border-radius:20px;background:#b66d55;transform:rotate(28deg);box-shadow:0 26px #a65f4b,0 52px #985642}
+.hand span{position:absolute;right:75px;top:38px;width:48px;height:48px;border-radius:50%;background:#c17a60;z-index:2}
+.hand.active{opacity:1;transform:translateX(0) rotate(8deg)}
+.pluck-ring{position:absolute;width:170px;height:170px;border-radius:50%;border:1px solid #ff9bc944;opacity:0;transform:scale(.4);pointer-events:none}
+.pluck-ring.active{animation:pluckRing 1.1s ease-out forwards}
+@keyframes pluckRing{0%{opacity:0;transform:scale(.35)}25%{opacity:1}100%{opacity:0;transform:scale(2.1)}}
+.photo-reveal{position:absolute;z-index:10;left:50%;top:50%;transform:translate(-50%,-40%) scale(.35);opacity:0;text-align:center;pointer-events:none;transition:1.15s cubic-bezier(.16,1,.3,1)}
+.photo-reveal.show{opacity:1;transform:translate(-50%,-42%) scale(1)}
+.photo-frame{width:min(330px,54vw);height:min(430px,58vh);padding:8px;border-radius:24px;background:linear-gradient(145deg,#fff,#ffb5d6,#a991ff);box-shadow:0 35px 90px #000b,0 0 60px #ff5da933;position:relative;overflow:hidden}
+.photo-frame img{width:100%;height:100%;object-fit:cover;border-radius:17px;display:block}
+.photo-shine{position:absolute;inset:-40%;background:linear-gradient(115deg,transparent 35%,#fff8 48%,transparent 58%);transform:translateX(-80%) rotate(12deg)}
+.photo-reveal.show .photo-shine{animation:photoShine 1.5s .45s ease-out}
+@keyframes photoShine{to{transform:translateX(80%) rotate(12deg)}}
+.photo-label{margin-top:18px;text-shadow:0 3px 20px #000}
+.photo-label span{display:block;font-size:9px;letter-spacing:3px;color:#ffb1d2}
+.photo-label strong{display:block;font:700 38px "Playfair Display";margin-top:4px}
+.stage-hint{position:absolute;z-index:9;bottom:8%;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#b9aebb;display:flex;align-items:center;gap:10px;transition:.4s}
+.stage-hint.off{opacity:0;transform:translate(-50%,10px)}
+.tap-dot{width:8px;height:8px;border-radius:50%;background:#ff74ad;box-shadow:0 0 20px #ff74ad;animation:dotPulse 1.2s infinite}
+@keyframes dotPulse{50%{transform:scale(1.8);opacity:.4}}
+.stage-message{position:absolute;z-index:8;right:7%;bottom:10%;text-align:right;opacity:0;transform:translateY(20px);transition:.8s}
+.stage-message.show{opacity:1;transform:none}
+.stage-message span{font-size:24px}.stage-message b{display:block;font:600 24px "Playfair Display";color:#fff}.stage-message small{display:block;color:#9e929f;margin-top:4px}
+.plucked-stage.plucked .rose-bloom{animation:pluckFlower 1s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes pluckFlower{0%{transform:translateX(-50%) scale(1)}35%{transform:translate(-50%,-10px) rotate(-8deg) scale(1.05)}100%{transform:translate(-50%,150px) rotate(18deg) scale(.2);opacity:0}}
+.plucked-stage.plucked .stem{animation:stemFade 1.1s forwards}
+@keyframes stemFade{to{opacity:.15;filter:blur(2px)}}
+.plucked-stage.plucked .hand{opacity:1;transform:translateX(0) rotate(8deg)}
+@media(max-width:760px){
+ .plucked-stage{min-height:700px;border-radius:28px}.stage-copy{left:7%;right:7%;top:7%}.stage-copy .title{font-size:48px}
+ .rose-bloom{top:38%}.hand{left:calc(50% + 55px);top:47%;transform:scale(.8) translateX(40px) rotate(8deg)}
+ .hand.active{transform:scale(.8) translateX(0) rotate(8deg)}.photo-frame{width:230px;height:310px}.photo-label strong{font-size:30px}
+ .stage-message{right:7%;bottom:7%}
+}
+
+</style>
+</head>
+<body>
+<div class="bg"></div><canvas id="stars"></canvas>
+
+<div id="intro">
+  <div class="intro-box">
+    <div class="rose-mark">🌹</div>
+    <div class="intro-kicker">A VERY IMPORTANT BIRTHDAY MESSAGE</div>
+    <h1 class="intro-title">My Gulab<br>Flower</h1>
+    <p class="intro-copy">For the person who somehow manages to be handsome, cute, annoying and adorable at exactly the same time. 😂❤️</p>
+    <button class="enter" id="enter">OPEN YOUR FLOWER GARDEN ✦</button>
+  </div>
+</div>
+
+<nav><div class="brand">FOR MY <b>GULAB FLOWER 🌹</b></div><div class="links"><button onclick="go('home')">Home</button><button onclick="go('memories')">Photos</button><button onclick="go('cake')">Cake</button></div><button class="music" id="music">♫</button></nav>
+
+<section id="home">
+<div class="wrap hero reveal">
+  <div class="kicker">26 AUGUST • BIRTHDAY OF A CERTIFIED CUTIE</div>
+  <h1 class="hero-title"><small>TO THE ONE WHO ISN'T JUST A FLOWER...</small>HAPPY<br>BIRTHDAY<br>GULAB 🌹</h1>
+  <p class="hero-copy">Ehtisham, if people were flowers, you'd be my gulab — a little dramatic, impossible to ignore, occasionally prickly, but somehow making everything around you feel prettier. ❤️</p>
+  <div class="count"><div class="unit"><b id="d">00</b><span>Days</span></div><div class="unit"><b id="h">00</b><span>Hours</span></div><div class="unit"><b id="m">00</b><span>Minutes</span></div><div class="unit"><b id="s">00</b><span>Seconds</span></div></div>
+  <div class="actions"><button class="primary" onclick="go('gift')">I BROUGHT YOU SOMETHING 🎁</button><button class="secondary" onclick="go('memories')">SHOW ME THE GULAB 📸</button></div>
+</div><div class="scroll">SCROLL • THE GARDEN CONTINUES</div>
+</section>
+
+
+<section id="gift" class="plucked-section">
+  <div class="wrap">
+    <div class="plucked-stage reveal" id="pluckedStage">
+      <div class="stage-copy">
+        <div class="kicker">A LITTLE SECRET</div>
+        <h2 class="title">I said you were<br>my flower.</h2>
+        <p class="muted">But I never meant the flower garden. I meant <b>you.</b></p>
+      </div>
+
+      <div class="flower-scene" id="flowerScene">
+        <div class="moon-glow"></div>
+        <div class="stem"></div>
+        <div class="leaf leaf-a"></div>
+        <div class="leaf leaf-b"></div>
+
+        <button class="rose-bloom" id="roseBloom" aria-label="Pick the rose">
+          <span class="petal p1"></span><span class="petal p2"></span>
+          <span class="petal p3"></span><span class="petal p4"></span>
+          <span class="petal p5"></span><span class="petal p6"></span>
+          <span class="center"></span>
+        </button>
+
+        <div class="hand" id="hand"><span></span></div>
+
+        <div class="pluck-ring" id="pluckRing"></div>
+
+        <div class="photo-reveal" id="photoReveal">
+          <div class="photo-frame">
+            <img src="photos/photo-4.jpg" alt="Ehtisham">
+            <div class="photo-shine"></div>
+          </div>
+          <div class="photo-label">
+            <span>THAT'S THE FLOWER I MEANT.</span>
+            <strong>Ehtisham.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage-hint" id="stageHint">
+        <span class="tap-dot"></span>
+        Tap the rose.
+      </div>
+
+      <div class="stage-message" id="stageMessage">
+        <span>🌹</span>
+        <b>Not the rose.</b>
+        <small>The person behind it.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="diagnostic">
+<div class="wrap"><div class="panel reveal">
+  <div class="kicker">02 • GULAB ANALYSIS</div><h2 class="title">Scientific results<br>are concerning.</h2>
+  <p class="muted" id="scan">Scanning the birthday flower...</p>
+  <div class="statuses">
+    <div class="status"><span>🌹 Gulab-ness</span><b>100%</b></div>
+    <div class="status"><span>✨ Handsome energy</span><b>Dangerously high</b></div>
+    <div class="status"><span>😂 Ability to make people laugh</span><b>Certified</b></div>
+    <div class="status"><span>😌 Ego after seeing this website</span><b>Loading...</b></div>
+  </div>
+</div></div>
+</section>
+
+<section id="chat">
+<div class="wrap reveal">
+  <div class="kicker">03 • PRIVATE GULAB CHAT</div><h2 class="title">He saw the website.<br>Unfortunately. 😂</h2>
+  <div class="chat">
+    <div class="chathead"><img class="avatar" src="photos/photo-1.jpg"><div><b>Ehtisham 🌹</b><br><span class="online">● probably smiling right now</span></div></div>
+    <div id="msgs">
+      <div class="bubble them">Why is there an entire website for me? 😭</div>
+      <div class="bubble me">Because a normal “Happy Birthday” cannot contain this much Gulab. 🌹</div>
+      <div class="bubble them">Am I at least looking good?</div>
+      <div class="bubble me">Unfortunately... yes. This is becoming a problem. 😂❤️</div>
+    </div>
+    <div style="padding:15px 18px;border-top:1px solid var(--line)"><button class="primary" onclick="reply()">REPLY TO GULAB →</button></div>
+  </div>
+</div>
+</section>
+
+<section id="memories">
+<div class="wrap">
+  <div class="memory-intro reveal"><div><div class="kicker">04 • THE GULAB GALLERY</div><h2 class="title">Six moods.<br>One flower.</h2></div><p class="muted">I gave every photo its own little line because every version of you deserves its own compliment. 🌹</p></div>
+  <div class="gallery reveal">
+    <div class="card" onclick="view(this)"><img src="photos/photo-1.jpg"><div class="caption"><b>THE SLEEPY GULAB</b><strong>“Even half-asleep, you still look like somebody's favorite person.”</strong><span class="quote">— Please wake up, flower. The birthday is waiting. 😂</span></div></div>
+    <div class="card" onclick="view(this)"><img src="photos/photo-2.jpg"><div class="caption"><b>THE CONFIDENT GULAB</b><strong>“That thumbs-up says ‘yes, I know I'm cute.’”</strong><span class="quote">And honestly... who's going to argue? 😭</span></div></div>
+    <div class="card" onclick="view(this)"><img src="photos/photo-3.jpg"><div class="caption"><b>THE TWO-FLOWER MOMENT</b><strong>“One frame, two smiles, unlimited memories.”</strong><span class="quote">Some pictures become memories before you even realize it. ❤️</span></div></div>
+    <div class="card" onclick="view(this)"><img src="photos/photo-4.jpg"><div class="caption"><b>THE CLOSE-UP GULAB</b><strong>“Proof that your face has no business being this photogenic.”</strong><span class="quote">Sir, please stop making the camera look underdressed. 😂</span></div></div>
+    <div class="card" onclick="view(this)"><img src="photos/photo-5.jpg"><div class="caption"><b>THE SIDE PROFILE</b><strong>“A whole rose garden from one angle.”</strong><span class="quote">Main-character energy: confirmed. 🌹</span></div></div>
+    <div class="card" onclick="view(this)"><img src="photos/photo-6.jpg"><div class="caption"><b>THE QUIET GULAB</b><strong>“Some flowers don't need to shout to steal the whole garden.”</strong><span class="quote">This one just smiled and won. ❤️</span></div></div>
+  </div>
+</div>
+</section>
+
+<section id="cake">
+<div class="wrap"><div class="panel cake reveal">
+  <div class="kicker">05 • BIRTHDAY CEREMONY</div><h2 class="title">One wish.<br>Make it count.</h2>
+  <div class="cake-art" id="cake"><div class="candles"><i class="candle"><b class="flame"></b></i><i class="candle"><b class="flame"></b></i><i class="candle"><b class="flame"></b></i></div><div class="icing"></div><div class="cakebody"></div></div>
+  <button class="primary" onclick="blow()">BLOW THE CANDLES 🎂</button><p class="muted" id="wish"></p>
+</div></div>
+</section>
+
+<section id="final">
+<div class="wrap final reveal">
+  <div class="kicker">06 • THE LAST PETAL</div>
+  <h2>HAPPY<br>BIRTHDAY<br>MY GULAB 🌹</h2>
+  <p class="hero-copy">May your year be full of the kind of happiness that stays, the kind of people who make you laugh until your stomach hurts, and memories that never lose their color.<br><br>Keep smiling. Keep being ridiculous. Keep being you.<br><br>And yes — you're still my Gulab Flower. No returns. 😂❤️</p>
+  <div class="sig">Made with a ridiculous amount of love, just for Ehtisham.</div>
+  <div class="actions" style="margin-top:28px"><button class="primary" onclick="celebrate(120)">MAKE THE GARDEN BLOOM 🌹✨</button><button class="secondary" onclick="go('home')">REPLAY ↺</button></div>
+</div>
+</section>
+
+<div class="lightbox" id="lightbox"><button class="close" onclick="closeView()">×</button><img id="big"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+function go(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+let audioCtx=null,sound=true;
+function beep(f=650,d=.08){if(!sound)return;try{audioCtx??=new(window.AudioContext||window.webkitAudioContext)();let o=audioCtx.createOscillator(),g=audioCtx.createGain();o.frequency.value=f;o.type="sine";g.gain.setValueAtTime(.0001,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(.035,audioCtx.currentTime+.01);g.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+d);o.connect(g).connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+d)}catch(e){}}
+$("#enter").onclick=()=>{$("#intro").classList.add("intro-hide");beep(700,.13);setTimeout(()=>beep(920,.18),130);celebrate(45)}
+$("#music").onclick=()=>{sound=!sound;$("#music").textContent=sound?"♫":"×";if(sound)beep(750,.08)}
+
+function birthday(){let n=new Date(),y=n.getFullYear(),t=new Date(y,7,26);if(t<=n)t=new Date(y+1,7,26);return t}
+function countdown(){let x=Math.max(0,birthday()-new Date());let a=[Math.floor(x/864e5),Math.floor(x/36e5)%24,Math.floor(x/6e4)%60,Math.floor(x/1e3)%60];["d","h","m","s"].forEach((id,i)=>$("#"+id).textContent=String(a[i]).padStart(2,"0"))}countdown();setInterval(countdown,1000);
+
+const observer=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("show")),{threshold:.12});$$(".reveal").forEach(e=>observer.observe(e));
+
+let opened=false;function openGift(){if(opened)return;opened=true;$("#gift").classList.add("open");$("#giftMsg").textContent="SURPRISE, GULAB. 🌹 Your birthday has officially been upgraded.";beep(500,.12);setTimeout(()=>beep(800,.18),130);celebrate(70);setTimeout(()=>go("diagnostic"),900)}
+let scans=["Checking petals...","Measuring smile levels...","Comparing with actual roses...","Result: unfairly cute.","Diagnosis complete: GULAB FLOWER CONFIRMED. 🌹"];let si=0;setInterval(()=>$("#scan").textContent=scans[si++%scans.length],1700);
+
+const r=["Okay... this is actually cute. 🥹","I knew I was a Gulab. 😌🌹","Where's my real cake? 😂","Fine. You win. Thank you. ❤️","I'm saving this forever. 😭"];
+let ri=0;function reply(){let a=document.createElement("div");a.className="bubble them";a.textContent=r[ri++%r.length];$("#msgs").appendChild(a);beep(600,.08);setTimeout(()=>{let b=document.createElement("div");b.className="bubble me";b.textContent="Now smile, Gulab. It is your day. 🌹";$("#msgs").appendChild(b);beep(820,.08)},450)}
+
+function view(el){$("#big").src=el.querySelector("img").src;$("#lightbox").classList.add("show");beep(730,.07)}function closeView(){$("#lightbox").classList.remove("show")}document.addEventListener("keydown",e=>e.key==="Escape"&&closeView());
+
+function blow(){if($("#cake").classList.contains("blown"))return;$("#cake").classList.add("blown");$("#wish").textContent="✨ Wish received. May your next chapter be softer, brighter and happier than the last. ❤️";beep(300,.12);setTimeout(()=>beep(220,.18),100);celebrate(90);toast("Candles out. Wish sent to the universe. 🌹")}
+
+function confetti(){let e=document.createElement("i");e.className="confetti";e.style.left=Math.random()*100+"vw";e.style.background=["#ff5da9","#b49aff","#67e8f9","#ffd76a","#fff"][Math.floor(Math.random()*5)];e.style.animationDuration=2.5+Math.random()*2.3+"s";document.body.appendChild(e);setTimeout(()=>e.remove(),5200)}
+function heart(){let e=document.createElement("i");e.className="heart";e.textContent=["🌹","❤","✦","♡"][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+"vw";e.style.fontSize=14+Math.random()*24+"px";e.style.setProperty("--drift",(Math.random()*140-70)+"px");document.body.appendChild(e);setTimeout(()=>e.remove(),4500)}
+function celebrate(n=50){for(let i=0;i<n;i++)setTimeout(confetti,i*12);for(let i=0;i<n/5;i++)setTimeout(heart,i*55)}
+setInterval(heart,2400);
+function toast(t){let e=$("#toast");e.textContent=t;e.classList.add("show");clearTimeout(window.tt);window.tt=setTimeout(()=>e.classList.remove("show"),2400)}
+
+const c=$("#stars"),ctx=c.getContext("2d");let stars=[];function resize(){c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);stars=Array.from({length:Math.min(190,innerWidth/5)},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.2+.2,v:Math.random()*.25+.05}))}function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);ctx.fillStyle="#fff";for(const s of stars){ctx.globalAlpha=.13+s.r*.25;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,7);ctx.fill();s.y-=s.v;if(s.y<0)s.y=innerHeight}requestAnimationFrame(draw)}addEventListener("resize",resize);resize();draw();
+
+/* One focused interaction: the rose is plucked, revealing that "my flower" means Ehtisham. */
+const roseBloom = document.getElementById("roseBloom");
+const pluckedStage = document.getElementById("pluckedStage");
+const hand = document.getElementById("hand");
+const pluckRing = document.getElementById("pluckRing");
+const photoReveal = document.getElementById("photoReveal");
+const stageHint = document.getElementById("stageHint");
+const stageMessage = document.getElementById("stageMessage");
+let pluckedOnce = false;
+
+roseBloom.addEventListener("click", () => {
+  if (pluckedOnce) return;
+  pluckedOnce = true;
+  pluckedStage.classList.add("plucked");
+  pluckRing.classList.add("active");
+  stageHint.classList.add("off");
+  beep(390,.10);
+  setTimeout(() => beep(560,.14), 110);
+  setTimeout(() => {
+    photoReveal.classList.add("show");
+    stageMessage.classList.add("show");
+    celebrate(65);
+    toast("Now you understand what I meant by “my flower.” ❤️");
+  }, 850);
+});
+
+</script>
+</body>
+</html>
